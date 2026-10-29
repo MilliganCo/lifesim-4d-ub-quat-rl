@@ -1,5 +1,7 @@
 # LifeSim 4-Team with 4D-UV-Quat RL
 
+> Public source preview: see [PUBLICATION.md](PUBLICATION.md) for actual checks, known failures and runtime limits.
+
 Минимальная симуляция «выживания» для 4 команд на сетке.
 Одна команда обучается через самоигру (self-play) с системой вознаграждений.
 Политика использует свёрточный экстрактор признаков с идеей 4D-UV-Quat (сдвиги U,V и «кватернионное» смешивание).
@@ -128,3 +130,8 @@ python play.py --ckpt runs/ppo/best_model.zip --episodes 3 --save-replay --repla
 - Простые правила боя и добычи.
 - Торговля по фиксированным ценам на клетках рынка.
 - Один обучаемый игрок, соперники — последняя «заморозка» или простые боты.
+
+
+## Public source status — 2026-10-29
+
+See [PUBLICATION.md](PUBLICATION.md) for the current verification scope, prototype limitations and runtime boundaries. Earlier audit checklists describe historical work.
